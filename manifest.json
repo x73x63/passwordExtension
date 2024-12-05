@@ -1,0 +1,35 @@
+{
+    "manifest_version" : 3,
+    "name" : "Pssword Generate",
+    "version" : "0.1",
+    "description" : "pssword generate manage",
+
+    "permissions" : [
+        "tabs",
+        "activeTab"
+    ],
+
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    
+    "background" : {
+        "service_worker": "js/serviceWorker.js"
+    },
+    
+    "icons": {
+        "16": "images/logo.png",
+        "48": "images/logo.png",
+       "128": "images/logo.png" 
+    },
+
+    "options_page": "options.html",
+
+    
+	"action": {
+		"default_title": "Pssword Generate",
+		"default_icon": "images/logo.png",
+        "default_popup": "popup.html" 
+	}
+}

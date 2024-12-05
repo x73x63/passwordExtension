@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>密码管理</title>
+        <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    </head>
+    <body>
+        <form>
+            <div class="form-group">
+                <label for="domain">Domain</label>
+                <input type="text" class="form-control" id="domain" placeholder="Site Name">
+            </div>
+            <div class="form-group">
+                <label for="salt">Salt</label>
+                <input type="text" class="form-control" id="salt" placeholder="Sentence Or Poetry Or Other">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" id="generate">Generate</button>
+            </div>
+            <div class="form-group">
+                <label for="password">Copy</label>
+                <input type="text" class="form-control" id="encryptiontext" placeholder="Encryption Text" readonly />
+            </div>
+        </form>
+        
+        <script src="./lib/jquery.min.js"></script>
+        <script src="./lib/md5.min.js"></script>
+    </body>
+</html>
